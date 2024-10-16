@@ -1,12 +1,119 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>T-Shirts</title>
+
+  <title>Jehad's T-shirts</title>
+
+  
+
+
+  <style>
+
+    .tshirt-store {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 20px;
+
+      justify-content: space-around; 
+
+    }
+
+
+    .tshirt-item {
+
+      width: 250px; 
+
+      text-align: center;
+
+      border: 1px solid #ccc;
+
+      padding: 10px;
+
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+    }
+
+
+    .tshirt-item img {
+
+      width: 100%; 
+
+      height: auto;
+
+    }
+
+  </style>
+
 </head>
+
 <body>
+
+  <div id="root">If you see this text, React hasn't rendered yet.</div> 
+
+
+  <
+
+  <script>
+
+    console.log("HTML is loaded and JavaScript is running!");
+
+  </script>
+
+
   
+
+  <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+
+  <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+
+
   
+
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+  
+
+  <script type="text/babel">
+
+    console.log("Testing if React is working...");
+
+
+    const { useState } = React;
+
+
+    const App = () => {
+
+      return (
+
+        <h1>React is running..</h1>
+
+      );
+
+    };
+
+
+    ReactDOM.render(<App />, document.getElementById('root'));
+
+  </script>
+
+
+  
+
+  <script type="text/babel" src="./t-shirts.js"></script>
+
+  <script type="text/babel" src="./TShirtStore.js"></script>
+
+
 </body>
-</html>
+
+</html> 
